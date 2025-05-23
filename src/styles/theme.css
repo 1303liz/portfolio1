@@ -1,0 +1,35 @@
+:root {
+  /* Modern Tech Color Scheme */
+  --primary: #6e57e0;          /* Purple primary accent */
+  --primary-light: #9f8efa;    /* Lighter purple */
+  --secondary: #00c8b3;        /* Teal accent */
+  --background: #f8f9fe;       /* Light background */
+  --background-alt: #eef1ff;   /* Light purple background */
+  --text: #252a41;             /* Dark text */
+  --text-secondary: #4a5072;   /* Medium dark text */
+  --text-tertiary: #7b84a8;    /* Light text */
+  --shadow: rgba(110, 87, 224, 0.15);  /* Purple shadow */
+  --border: rgba(110, 87, 224, 0.1);   /* Purple border */
+  
+  /* Sizes and other variables */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --header-height: 72px;
+}
+
+/* Dark mode theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #8a74fc;          /* Brighter purple for dark mode */
+    --primary-light: #b1a2ff;    /* Lighter purple */
+    --secondary: #00e6cc;        /* Brighter teal for dark mode */
+    --background: #121528;       /* Dark background */
+    --background-alt: #1e2340;   /* Slightly lighter dark background */
+    --text: #ffffff;             /* White text */
+    --text-secondary: #b4bbdf;   /* Light text */
+    --text-tertiary: #848db3;    /* Dimmer light text */
+    --shadow: rgba(138, 116, 252, 0.25);  /* Purple shadow for dark mode */
+    --border: rgba(138, 116, 252, 0.2);   /* Purple border for dark mode */
+  }
+}

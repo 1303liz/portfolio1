@@ -1,9 +1,8 @@
 /* Education section */
 .education {
   position: relative;
-  background-color: var(--background-color);
-  overflow: hidden;
-  
+  background-color: var(--background-alt);
+  padding: 6rem 2rem;
 }
 
 /* Background elements */
@@ -97,7 +96,8 @@
 .education .container {
   position: relative;
   z-index: 10;
-  border-radius: var(--border-radius);
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .education .section-title {
@@ -112,10 +112,6 @@
   gap: 40px;
   position: relative;
   z-index: 10;
-  opacity: 0;
-  animation: fadeUp 0.8s forwards 0.3s;
-  transition: all 1s ease-out;
-  transform: translateY(30px);
 }
 
 /* Section header animations */
@@ -136,15 +132,11 @@
 
 /* Timeline design */
 .formal-education {
-  padding: 30px;
-  background: var(--card-bg-color);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: var(--transition);
-  color: var(--text-light);
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 5px 15px var(--shadow);
+  border: 1px solid var(--border);
 }
 
 .formal-education:hover {
@@ -156,7 +148,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 25px;
-  color: var(--text-light);
+  color: var(--text);
   position: relative;
   display: inline-block;
 }
@@ -166,7 +158,7 @@
   position: absolute;
   width: 40px;
   height: 3px;
-  background: var(--gradient-primary);
+  background: var(--primary);
   bottom: -6px;
   left: 0;
   border-radius: 3px;
@@ -180,7 +172,7 @@
 .timeline-item {
   position: relative;
   padding: 0 0 30px 30px;
-  border-left: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary);
 }
 
 .timeline-item:last-child {
@@ -190,77 +182,66 @@
 .timeline-item::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background: var(--gradient-primary);
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
   border-radius: 50%;
-  left: -9px;
+  left: -8px;
   top: 0;
-  box-shadow: 0 0 0 4px rgba(74, 108, 247, 0.2);
 }
 
 .timeline-content {
   padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--background-alt);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px var(--shadow);
   transition: var(--transition);
   border-left: 3px solid transparent;
-  color: var(--text-muted);
-}
-
-body.light-mode .timeline-content {
-  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-secondary);
 }
 
 .timeline-content:hover {
   transform: translateX(5px);
-  border-left: 3px solid var(--primary-color);
-  box-shadow: 0 8px 20px rgba(74, 108, 247, 0.1);
+  border-left: 3px solid var(--primary);
 }
 
 .timeline-content h4 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 5px;
-  color: var(--text-light);
+  color: var(--text);
 }
 
 .timeline-content h5 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .timeline-content .duration {
   display: inline-block;
   padding: 4px 12px;
-  background: rgba(74, 108, 247, 0.1);
-  color: var(--primary-color);
+  background: rgba(29, 78, 216, 0.08);
+  color: var(--primary);
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 15px;
-  border: 1px solid rgba(74, 108, 247, 0.2);
 }
 
 .timeline-content p {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 0;
 }
 
 /* Certifications */
 .certifications {
-  padding: 30px;
-  background: var(--card-bg-color);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: var(--transition);
-  color: var(--text-light);
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 5px 15px var(--shadow);
+  border: 1px solid var(--border);
   height: 100%;
 }
 
@@ -273,7 +254,7 @@ body.light-mode .timeline-content {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 25px;
-  color: var(--text-light);
+  color: var(--text);
   position: relative;
   display: inline-block;
 }
@@ -283,7 +264,7 @@ body.light-mode .timeline-content {
   position: absolute;
   width: 40px;
   height: 3px;
-  background: var(--gradient-primary);
+  background: var(--primary);
   bottom: -6px;
   left: 0;
   border-radius: 3px;
@@ -298,25 +279,21 @@ body.light-mode .timeline-content {
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--background-alt);
   border-left: 3px solid transparent;
   transition: var(--transition);
-  color: var(--text-muted);
-}
-
-body.light-mode .cert-list li {
-  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-secondary);
 }
 
 .cert-list li:hover {
   transform: translateX(5px);
-  border-left: 3px solid var(--primary-color);
-  background-color: rgba(74, 108, 247, 0.1);
+  border-left: 3px solid var(--primary);
+  background-color: rgba(29, 78, 216, 0.08);
 }
 
 .cert-list li strong {
   display: block;
-  color: var(--text-light);
+  color: var(--text);
   margin-bottom: 5px;
 }
 
@@ -333,9 +310,13 @@ body.light-mode .cert-list li {
 }
 
 @media (max-width: 576px) {
+  .education {
+    padding: 4rem 1rem;
+  }
+  
   .formal-education,
   .certifications {
-    padding: 20px;
+    padding: 1.5rem;
   }
   
   .timeline-content {

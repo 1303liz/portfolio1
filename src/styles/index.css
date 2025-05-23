@@ -1,0 +1,322 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  /* Modern minimalist color palette */
+  --primary: #1D4ED8;
+  --primary-light: #3B82F6;
+  --primary-dark: #1E40AF;
+  --accent: #6D28D9;
+  --background: #F8F9FA;
+  --background-alt: #F1F5F9;
+  --surface: #FFFFFF;
+  --text: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --border: #E2E8F0;
+  --shadow: rgba(0, 0, 0, 0.03);
+  
+  /* RGB values for rgba usage */
+  --primary-rgb: 29, 78, 216;
+  --primary-light-rgb: 59, 130, 246;
+  --primary-dark-rgb: 30, 64, 175;
+  --accent-rgb: 109, 40, 217;
+  --background-rgb: 248, 249, 250;
+  --background-alt-rgb: 241, 245, 249;
+  --surface-rgb: 255, 255, 255;
+  --text-rgb: 15, 23, 42;
+  --text-secondary-rgb: 71, 85, 105;
+  
+  /* Overlay and blur effects */
+  --overlay-color: rgba(var(--text-rgb), 0.03);
+  --blur-effect: 60px;
+  --gradient-primary: linear-gradient(135deg, rgba(var(--primary-rgb), 0.8), rgba(var(--accent-rgb), 0.8));
+  --gradient-secondary: linear-gradient(135deg, rgba(var(--accent-rgb), 0.8), rgba(var(--primary-rgb), 0.8));
+  
+  /* UI elements */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --max-width: 1200px;
+  --header-height: 70px;
+  --section-spacing: 6rem;
+  --transition: all 0.25s ease;
+  
+  color-scheme: light;
+  color: var(--text);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+/* Dark mode colors */
+.dark-theme {
+  --primary: #3B82F6;
+  --primary-light: #60A5FA;
+  --primary-dark: #2563EB;
+  --accent: #8B5CF6;
+  --background: #121212;
+  --background-alt: #1E1E1E;
+  --surface: #242424;
+  --text: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-tertiary: #94A3B8;
+  --border: #303030;
+  --shadow: rgba(0, 0, 0, 0.2);
+  
+  /* RGB values for dark mode */
+  --primary-rgb: 59, 130, 246;
+  --primary-light-rgb: 96, 165, 250;
+  --primary-dark-rgb: 37, 99, 235;
+  --accent-rgb: 139, 92, 246;
+  --background-rgb: 18, 18, 18;
+  --background-alt-rgb: 30, 30, 30;
+  --surface-rgb: 36, 36, 36;
+  --text-rgb: 241, 245, 249;
+  --text-secondary-rgb: 203, 213, 225;
+  
+  --overlay-color: rgba(255, 255, 255, 0.03);
+  
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+button, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+button:hover, .btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: var(--section-spacing) 1.5rem;
+  position: relative;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid and flex utilities */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Common animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive breakpoints */
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: 3rem;
+  }
+}
