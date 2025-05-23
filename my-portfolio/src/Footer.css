@@ -1,0 +1,11 @@
+/* ====== Footer Styles ====== */
+.footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
