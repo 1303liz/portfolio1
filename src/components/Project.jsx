@@ -1,5 +1,6 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import '/src/styles/project.css';
+import portfolio from "../assets/portfolio.jpg";
 
 const projectList = [
 	{
@@ -7,8 +8,8 @@ const projectList = [
 		name: 'Portfolio Website',
 		description:
 			'Personal portfolio built using React to showcase my projects and skills in web development.',
-		technologies: ['React', 'CSS', 'Vite'],
-		github: 'https://github.com/1303/portfolio',
+		technologies: ['HTML', 'CSS', ],
+		github: 'https://github.com/1303liz/Portifolio',
 		link: 'https://portfolio-demo.com',
 		image: '/assets/portfolio.png',
 	},
@@ -17,10 +18,10 @@ const projectList = [
 		name: 'E-commerce Platform',
 		description:
 			'A responsive e-commerce website with product listings, cart functionality, and user authentication.',
-		technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+		technologies: ['CSS', 'Html'],
 		github: 'https://github.com/username/ecommerce',
 		link: 'https://ecommerce-demo.com',
-		image: '/assets/ecommerce.png',
+		image: '/assets/ecommerce.jpg',
 	},
 	{
 		id: 3,

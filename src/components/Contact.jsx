@@ -79,7 +79,7 @@ function Contact() {
               </div>
               <div className="method-content">
                 <h3>Phone</h3>
-                <p>+254 XXX XXX XXX</p>
+                <p>+254 112734105</p>
               </div>
             </div>
             
@@ -94,7 +94,7 @@ function Contact() {
             </div>
             
             <div className="social-links">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" className="social-link">
+              <a href="https://linkedin.com/in/elizabeth Nganga" target="_blank" rel="noreferrer" className="social-link">
                 <FaLinkedin />
               </a>
               <a href="https://github.com/1303LIZ" target="_blank" rel="noreferrer" className="social-link">
