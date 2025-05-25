@@ -11,7 +11,7 @@ const projectList = [
 		technologies: ['HTML', 'CSS', ],
 		github: 'https://github.com/1303liz/Portifolio',
 		link: 'https://portfolio-demo.com',
-		image: '/assets/portfolio.png',
+		image: portfolio,
 	},
 	{
 		id: 2,
@@ -21,7 +21,7 @@ const projectList = [
 		technologies: ['CSS', 'Html'],
 		github: 'https://github.com/username/ecommerce',
 		link: 'https://ecommerce-demo.com',
-		image: '/assets/ecommerce.jpg',
+		image: portfolio,
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ const projectList = [
 		technologies: ['PHP', 'Laravel', 'MySQL', 'Bootstrap'],
 		github: 'https://github.com/username/task-manager',
 		link: 'https://task-manager-demo.com',
-		image: '/assets/task-manager.png',
+		image: portfolio,
 	},
 ];
 
