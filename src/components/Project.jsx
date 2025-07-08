@@ -1,6 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import '/src/styles/project.css';
 import portfolio from "../assets/portfolio.jpg";
+import project from "../assets/project.png";
 
 const projectList = [
 	{
@@ -10,18 +11,18 @@ const projectList = [
 			'Personal portfolio built using React to showcase my projects and skills in web development.',
 		technologies: ['HTML', 'CSS', ],
 		github: 'https://github.com/1303liz/Portifolio',
-		link: 'https://portfolio-demo.com',
 		image: portfolio,
+		link: '#', // Added a placeholder link
 	},
 	{
 		id: 2,
-		name: 'E-commerce Platform',
+		name: 'user_casemagment',
 		description:
-			'A responsive e-commerce website with product listings, cart functionality, and user authentication.',
-		technologies: ['CSS', 'Html'],
-		github: 'https://github.com/username/ecommerce',
-		link: 'https://ecommerce-demo.com',
-		image: portfolio,
+			'This is a simple Django-based user management system that allows users to register, log in, view and edit their profiles, and change passwords. It also includes a mock verification step and an admin panel where superusers can manage all registered users. The project follows clean Git practices, includes unit tests for key features, and is organized for easy setup and deployment.',
+		technologies: ['CSS', 'HTML'],
+		github: 'https://github.com/1303liz/managment',
+		link: 'https://managment-production.up.railway.app/',
+		image: project, // Now correctly imported
 	},
 	{
 		id: 3,

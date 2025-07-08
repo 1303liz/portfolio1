@@ -9,7 +9,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   
   const techBadges = [
-    "PHP", "Laravel", "HTML", "CSS", "React", "UI/UX"
+    "PHP", "Laravel", "HTML", "CSS", "React", "Django"
   ];
   
   // Animation on component mount

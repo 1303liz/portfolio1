@@ -4,8 +4,8 @@ import '/src/styles/About.css';
 
 function About() {
   const stats = [
-    { number: "2+", label: "Years Coding" },
-    { number: "10+", label: "Projects" },
+    { number: "1+", label: "Years Coding" },
+    { number: "5+", label: "Projects" },
     { number: "5+", label: "Tech Stack" }
   ];
 
@@ -21,7 +21,7 @@ function About() {
           <h2 className="about-title">A passionate developer focused on crafting clean web experiences</h2>
           
           <div className="about-text">
-            <p>Hello! I'm a passionate web developer with a growing background in PHP (Laravel) and React. I enjoy building interactive and user-friendly web applications that solve real problems.</p>
+            <p>Hello! I'm a passionate web developer with a growing background in Django and React. I enjoy building interactive and user-friendly web applications that solve real problems.</p>
             
             <p>Currently pursuing a Bachelor's degree in Business Information Technology at Taita Taveta University, I'm dedicated to continuously expanding my skills and knowledge in the ever-evolving tech landscape.</p>
             

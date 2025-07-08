@@ -29,7 +29,7 @@ function Skills() {
       skills: [
         { name: "HTML", level: 60 },
         { name: "CSS", level: 65 },
-        { name: "JavaScript", level: 45 },
+        { name: "Django", level: 45 },
         { name: "React", level: 40 },
       ]
     },
@@ -37,9 +37,9 @@ function Skills() {
       title: "Backend",
       icon: <FaServer />,
       skills: [
-        { name: "PHP", level: 50 },
-        { name: "Laravel", level: 35 },
-        { name: "MySQL", level: 40 },
+        { name: "PHP", level: 40 },
+        { name: "python", level: 35 },
+        { name: "Django", level: 50 },
       ]
     },
     {
@@ -48,7 +48,7 @@ function Skills() {
       skills: [
         { name: "Git", level: 55 },
         { name: "VS Code", level: 70 },
-        { name: "Figma", level: 30 },
+        { name: "Django", level: 50 },
       ]
     },
     {
