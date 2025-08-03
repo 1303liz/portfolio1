@@ -29,7 +29,6 @@ function Skills() {
       skills: [
         { name: "HTML", level: 60 },
         { name: "CSS", level: 65 },
-        { name: "Django", level: 45 },
         { name: "React", level: 40 },
       ]
     },
@@ -38,8 +37,8 @@ function Skills() {
       icon: <FaServer />,
       skills: [
         { name: "PHP", level: 40 },
-        { name: "python", level: 35 },
-        { name: "Django", level: 50 },
+        { name: "python", level: 55 },
+        { name: "Django", level: 60 },
       ]
     },
     {
